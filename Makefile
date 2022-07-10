@@ -1,4 +1,4 @@
-VERSION := 0.0.4
+VERSION := 0.0.5
 
 workflow:
 	git tag -m "v${VERSION}" v${VERSION}
