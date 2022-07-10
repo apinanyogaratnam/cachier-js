@@ -1,6 +1,6 @@
 {
   "name": "cachier-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A node package for interacting with a self-hosted cachier service",
   "main": "index.js",
   "type": "module",
