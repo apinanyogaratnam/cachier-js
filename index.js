@@ -1,3 +1,3 @@
-import Cachier from './Cachier';
+import Cachier from './Cachier.js';
 
 export default Cachier;
