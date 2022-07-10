@@ -2,11 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   axios: ^0.27.2
-  cachier-js: ^0.0.1
+  cachier-js: ^0.0.2
 
 dependencies:
   axios: 0.27.2
-  cachier-js: 0.0.1
+  cachier-js: 0.0.2
 
 packages:
 
@@ -27,6 +27,15 @@ packages:
     resolution: {integrity: sha512-e+FGTk+HoyIO/0W/K0l123OBscnszaVTSqHZ/YK8J8pyyjUfsCS1APq6rhTeQXTgI5Gm/e1fcH7TsF5didgWEQ==}
     dependencies:
       axios: 0.27.2
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /cachier-js/0.0.2:
+    resolution: {integrity: sha512-uccxR9cI0lbSMzr7s2kARv78JSeYJVV3FrYQyB01XDdufk0l3LaAWJp/dNsOVFMnjcF054kSsokY53tMaS60Ew==}
+    dependencies:
+      axios: 0.27.2
+      cachier-js: 0.0.1
     transitivePeerDependencies:
       - debug
     dev: false
