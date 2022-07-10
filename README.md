@@ -29,6 +29,10 @@ Install package with pnpm:
 pnpm add cachier-js
 ```
 
+You can even use multiple registries:
+url: https://www.npmjs.com/package/cachier-js
+url: https://github.com/apinanyogaratnam/cachier-js/packages/1529765
+
 ## Usage
 
 ```js
