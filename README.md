@@ -1,6 +1,6 @@
-# Base Repository Template
+# Cachier JS
 
-A template of README best practices to make your README simple to understand and easy to use.
+A javascript library for interacting with a self-hosted cachier service.
 
 ## Table of Contents
 
@@ -11,32 +11,46 @@ A template of README best practices to make your README simple to understand and
 
 ## Installation
 
-Download to your project directory, add `README.md`, and commit:
+Install package with npm:
 
 ```sh
-curl -LO http://git.io/Xy0Chg
-git add README.md
-git commit -m "Use README Boilerplate"
+npm install cachier-js
+```
+
+Install package with yarn:
+
+```sh
+yarn add cachier-js
+```
+
+Install package with pnpm:
+
+```sh
+pnpm add cachier-js
 ```
 
 ## Usage
 
-Replace the contents of `README.md` with your project's:
+```js
+import Cachier from 'cachier-js';
 
-- Name
-- Description
-- Installation instructions
-- Usage instructions
-- Support instructions
-- Contributing instructions
-- License
+const client = new Cachier({ url: 'http://localhost:8000' });
 
-Feel free to remove any sections that aren't applicable to your project.
+const setCache = async (key, value) => {
+  const response = await client.set(key, value);
+  console.log(response);
+}
+
+const getCache = async (key) => {
+  const response = await client.get(key);
+    console.log(response);
+}
+```
 
 ## Support
 
-Please [open an issue](https://github.com/fraction/readme-boilerplate/issues/new) for support.
+Please [open an issue](https://github.com/apinanyogaratnam/cachier-js/issues/new) for support.
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/fraction/readme-boilerplate/compare/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/apinanyogaratnam/cachier-js/compare/).
