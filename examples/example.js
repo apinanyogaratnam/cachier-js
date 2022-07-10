@@ -12,5 +12,6 @@ const getCache = async (key) => {
     console.log(response);
 }
 
-setCache('key', 'value', 1000);
-getCache('key');
+setCache('key', 'value', 1000).then(() => {
+    getCache('key');
+});
