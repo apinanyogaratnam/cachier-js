@@ -27,7 +27,7 @@ class Cachier {
         };
 
         try {
-            const response = axios.post(this.url, data);
+            const response = await axios.post(this.url, data);
             return response.data.is_saved_successfully;
         } catch (error) {
             console.log(error);
