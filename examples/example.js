@@ -9,7 +9,7 @@ const setCache = async (key, value) => {
 
 const getCache = async (key) => {
   const response = await client.get(key);
-    console.log(response);
+  console.log(response);
 }
 
 setCache();
