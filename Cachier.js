@@ -36,4 +36,4 @@ class Cachier {
     }
 }
 
-module.exports = Cachier;
+export default Cachier;
