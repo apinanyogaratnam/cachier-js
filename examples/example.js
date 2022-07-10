@@ -2,8 +2,8 @@ import Cachier from 'cachier-js';
 
 const client = new Cachier({ url: 'http://localhost:8000' });
 
-const setCache = async (key, value) => {
-    const response = await client.set(key, value);
+const setCache = async (key, value, expiry) => {
+    const response = await client.set(key, value, expiry);
     console.log(response);
 }
 
@@ -12,5 +12,5 @@ const getCache = async (key) => {
     console.log(response);
 }
 
-setCache();
-getCache();
+setCache('key', 'value', 1000);
+getCache('key');
