@@ -1,1 +1,0 @@
-import Cachier from './Cachier';
