@@ -2,9 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   axios: ^0.27.2
+  cachier-js: ^0.0.1
 
 dependencies:
   axios: 0.27.2
+  cachier-js: 0.0.1
 
 packages:
 
@@ -17,6 +19,14 @@ packages:
     dependencies:
       follow-redirects: 1.15.1
       form-data: 4.0.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /cachier-js/0.0.1:
+    resolution: {integrity: sha512-e+FGTk+HoyIO/0W/K0l123OBscnszaVTSqHZ/YK8J8pyyjUfsCS1APq6rhTeQXTgI5Gm/e1fcH7TsF5didgWEQ==}
+    dependencies:
+      axios: 0.27.2
     transitivePeerDependencies:
       - debug
     dev: false
