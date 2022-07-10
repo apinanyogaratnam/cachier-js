@@ -1,4 +1,4 @@
-import Cachier from '../Cachier.js';
+import Cachier from 'cachier-js';
 
 const client = new Cachier({ url: 'http://localhost:8000' });
 
