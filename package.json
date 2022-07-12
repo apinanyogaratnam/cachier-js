@@ -1,5 +1,5 @@
 {
-  "name": "@apinanyogaratnam/cachier-js",
+  "name": "cachier-js",
   "version": "1.0.1",
   "description": "A node package for interacting with a self-hosted cachier service",
   "main": "index.js",
