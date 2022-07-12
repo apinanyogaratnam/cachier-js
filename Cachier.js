@@ -17,7 +17,7 @@ class Cachier {
         }
     }
 
-    async set(key, value, expiry) {
+    async set(key, value, expiry = null) {
         if (!key) return false;
 
         const data = {
